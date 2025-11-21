@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISHOW — Rate & Feedback</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- STYLE -->
+  <link rel="stylesheet" href="feedback.css">
+</head>
+
+<body>
+  <main class="wrapper">
+
+    <!-- BRAND HEADER -->
+    <header class="brand-section">
+      <img src="Images/IshowLogo.png" class="brand-logo" alt="ISHOW Logo">
+
+      <div class="brand-text">
+        <h1>ISHOW Garments World</h1>
+        <p class="slogan">Where Elegance Meets the World.</p>
+      </div>
+    </header>
+
+    <!-- FORM CARD -->
+    <section class="card">
+
+      <h2 class="title">Rate your purchase</h2>
+      <p class="subtitle">
+        Your experience means a lot to us — kindly give a quick rating and short feedback.
+      </p>
+
+      <!-- STAR RATING -->
+      <div class="rating-box">
+        <label class="rating-label">Your Rating</label>
+
+        <div class="stars" id="starRating">
+          <button class="star" data-value="1">☆</button>
+          <button class="star" data-value="2">☆</button>
+          <button class="star" data-value="3">☆</button>
+          <button class="star" data-value="4">☆</button>
+          <button class="star" data-value="5">☆</button>
+        </div>
+
+        <div id="ratingValue" class="rating-value">0 / 5</div>
+      </div>
+
+      <!-- FORM -->
+      <form id="feedbackForm" autocomplete="off">
+
+        <input type="text" id="name" name="name" placeholder="Your name (optional)">
+
+        <label class="label-small">Item purchased (optional)</label>
+        <select id="item" name="item">
+          <option value="">— Select item —</option>
+          <option>Agbada</option>
+          <option>Gown</option>
+          <option>Senator</option>
+          <option>Bridal Dress</option>
+          <option>Ready-to-Wear</option>
+          <option>Custom Tailoring</option>
+        </select>
+
+        <textarea id="message" name="message" placeholder="Share your experience…" maxlength="2000" required></textarea>
+
+        <label class="label-small">Upload a photo (optional)</label>
+        <input type="file" id="photo" accept="image/*">
+
+        <div id="preview" class="preview"></div>
+
+        <!-- PROGRESS -->
+        <div class="progress" id="progressRow" hidden>
+          <div class="progress-track">
+            <div id="uploadFill"></div>
+          </div>
+          <span id="progressPct">0%</span>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn gold">Submit Feedback</button>
+
+        <p id="formMsg" class="form-msg"></p>
+      </form>
+    </section>
+
+    <!-- THANK YOU SECTION -->
+    <section id="thanks" class="card hidden">
+      <h2 class="thanks-title">Thank you!</h2>
+      <p class="thanks-text">Your feedback has been received.</p>
+
+      <div class="btn-row">
+        <a class="btn gold" id="whatsappBtn" target="_blank">WhatsApp</a>
+        <a class="btn black" id="instaBtn" target="_blank">Instagram</a>
+        <a class="btn white" id="websiteBtn" target="_blank">Website</a>
+      </div>
+    </section>
+
+    <footer class="footer">© 2025 ISHOW Garments World</footer>
+  </main>
+
+  <script src="feedback.js"></script>
+
+</body>
+</html>
