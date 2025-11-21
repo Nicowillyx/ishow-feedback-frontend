@@ -122,7 +122,7 @@ feedbackForm.addEventListener("submit", async (e) => {
     feedbackCard.classList.add("hidden");
     thanksCard.classList.remove("hidden");
 
-    whatsappBtn.href = "https://wa.me/2349025000264";
+    whatsappBtn.href = "https://wa.me/2349025000264"; "https://wa.me/2347086630193"; "https://wa.me/2348037162364";
     instaBtn.href = "https://instagram.com/ishowgarmentsworld";
 
     feedbackForm.reset();
