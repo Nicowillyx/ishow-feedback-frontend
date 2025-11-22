@@ -60,8 +60,8 @@ photoInput.addEventListener("change", () => {
     return;
   }
 
-  if (file.size > 2 * 1024 * 1024) {
-    formMsg.textContent = "Image must be under 2MB.";
+  if (file.size > 5 * 1024 * 1024 * 1024 * 1024 * 1024) {
+    formMsg.textContent = "Image must be under 5MB.";
     photoInput.value = "";
     return;
   }
@@ -72,6 +72,8 @@ photoInput.addEventListener("change", () => {
   img.src = URL.createObjectURL(file);
   preview.appendChild(img);
 });
+
+
 
 // --- SUBMIT FORM ---
 feedbackForm.addEventListener("submit", async (e) => {
