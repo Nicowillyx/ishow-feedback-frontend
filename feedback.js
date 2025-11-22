@@ -60,7 +60,7 @@ photoInput.addEventListener("change", () => {
     return;
   }
 
-  if (file.size > 5 * 1024 * 1024 * 1024 * 1024 * 1024) {
+  if (file.size > 5 * 1024 * 1024) {
     formMsg.textContent = "Image must be under 5MB.";
     photoInput.value = "";
     return;
